@@ -1,0 +1,8 @@
+{
+  "name": "horse-paginate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/solussaude/Horse-Paginate",
+  "license": "MIT",
+  "private": true
+}
