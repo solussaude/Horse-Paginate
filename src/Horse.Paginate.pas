@@ -71,7 +71,7 @@ begin
         try
           LJsonArray := {$IF DEFINED(FPC)}TJSONData{$ELSE}TJSONValue{$ENDIF}(LContent) as TJSONArray;
           LPages := Trunc(LJsonArray.Count / LLimit.ToInteger) +
-                    Byte((LJsonArray.Count Mod  LLimit.ToInteger) <> 0); // Se tiver resto na divis√£o ent√£o soma um no total de paginas
+                    Byte((LJsonArray.Count Mod  LLimit.ToInteger) <> 0); // Se tiver resto na divis„o ent„o soma um no total de paginas
 
           LNewJsonArray := TJsonArray.Create;
           for i := (LLimit.ToInteger * (LPage.ToInteger - 1)) to ((LLimit.ToInteger * LPage.ToInteger)) - 1 do
